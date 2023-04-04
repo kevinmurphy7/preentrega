@@ -6,48 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/favicon.png">
-    <link rel="stylesheet" href="../style/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="../style/sass.css">
     <title>GALERIA</title>
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">INICIO</a>
-                </li>
-                <li>
-                    <a href="./galeria.html">GALERIA</a>
-                </li>
-                <li>
-                    <a href="./historia.html">HISTORIA</a>
-                </li>
-                <li>
-                    <a href="./plantel.html">PLANTEL</a>
-                </li>
-                <li>
-                    <a href="./contacto.html">CONTACTO</a>
-                </li>
-                <li>
-                    <a target="_blank" href="https://ligauinterior.com.ar/home">LIGA UNIVERSITARIA DEL INTERIOR</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-red">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">INICIO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="./galeria.html">GALERIA</a>
+                        <a class="nav-link" href="./historia.html">HISTORIA</a>
+                        <a class="nav-link" href="./plantel.html">PLANTEL</a>
+                        <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>FOTOS</h1>
+        <h1 class="animate__animated animate__fadeInDown">FOTOS</h1>
         <section>
-            <p>Disfrutá de nuestras mejores fotos. Podes encontrar fotos del calentamiento previo, charlas técnicas, situaciones del partido y festejos post victorias.
-            </p>
+                <p>Disfrutá de nuestras mejores fotos. Podes encontrar fotos del calentamiento previo, charlas técnicas, situaciones del partido y festejos post victorias.</p>
         </section>
 
         <section class="gallery-container">
             <div class="gallery-item">
-                <h2>Calentamiento previo</h2>
-                <p>Nuestro equipo preparándose para dejar la vida en la cancha...y de paso evitar lesiones</p>
+                        <h2>Pre-calentamiento</h2>
+                        <p>Nuestro equipo preparándose para dejar la vida en la cancha...y de paso evitar lesiones</p>
                 <img class="gallery-img" src="../images/calentamiento1.jpg" alt="trote para activar de varios jugadores">
                 <img class="gallery-img" src="../images/calentamiento2.jpg" alt="trote para activar de varios jugadores">
                 <img class="gallery-img" src="../images/calentamiento3.jpg" alt="pique corto de varios jugadores">
@@ -83,14 +78,19 @@
                 <img class="gallery-img" src="../images/festejo5.jpg" alt="plantel completo abrazados en formación">
             </div>
         </section>
+
     </main>
 
     <footer>
         <div class="icon">
+            <a href="../index.html"><img src="../images/home.png" alt="casa negra que redirige al Inicio"></a>
             <a target="_blank" href="http://facebook.com/SANMANUEL.LUI/"><img src="../images/facebook.svg" alt="logo de facebook"></a>
             <a target="_blank" href="https://www.instagram.com/sanma_ligau/"><img src="../images/instagram.png" alt="logo de instagram"></a>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
+
 </html>

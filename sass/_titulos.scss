@@ -1,0 +1,28 @@
+@mixin titulos ($color){
+    padding: 20px; 
+    font-weight: bolder;
+    color: $color;
+}
+
+h1{ 
+    @include titulos (black); 
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+h2{ 
+    @include titulos (red);
+    letter-spacing: 5px; 
+    font-size: 40px;
+    padding-left: 0;
+} 
+
+h3{ 
+    @include titulos (red);
+    margin-top: 25px;
+    padding-left: 15px; 
+    text-decoration-line: underline; 
+    font-size:25px; 
+} 

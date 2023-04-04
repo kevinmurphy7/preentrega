@@ -1,0 +1,57 @@
+form{ 
+    margin: 20px; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 10px 20px; 
+    box-sizing: border-box; 
+    border-radius: 15px; 
+
+    input, label, textarea{ 
+        width: 100%;
+        margin-bottom: 20px; 
+        padding: 10px; 
+        box-sizing: border-box; 
+        font-size: 20px; 
+    } 
+
+    input{
+        animation: shake 0.14s 3;
+    }
+    input:valid {
+        animation: none;
+    }
+    @keyframes shake {
+        0%{
+            translate: 0%;
+        }
+        25%{
+            translate: 8px 0;
+        }
+        75%{
+            translate: -8px 0;
+        }
+        100%{
+            translate: 0%;
+        }
+    }
+
+    textarea{ 
+        min-height: 100px; 
+        max-height: 200px; 
+        max-width: 100%; 
+        min-width: 100%; 
+    } 
+
+    .boton{ 
+        background-color: navy; 
+        padding: 20px; 
+        cursor: pointer; 
+    }
+    .boton:hover{
+        background: aquamarine;
+        transition: 1s;
+    }
+} 
+
+
+
+
