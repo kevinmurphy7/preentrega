@@ -14,38 +14,38 @@ li{
     font-size: 20px; 
     margin: 10px; 
     line-height: 30px; 
+    padding: 10px;
+    text-align: center;
 } 
 
 /* ------------------------------------------- */
 
 
-@media screen and (min-width: 320px){
+@media screen and (max-width: 320px){
     header, main{
         height: initial;
     }
-    body{
-        margin-bottom: 4rem;}
     p{
         font-size: 15px;
-        max-width: 320px;
+        max-width: 250px;
     }
-    .video{
-        width: 100%;
-    }
-    .gallery-img{
-        max-width: 320px;
+    .container{
+        display: flex;
+        flex-direction: column;
     }
     form{
-        max-width: 320px;
+        max-width: 250px;
+    }
+    .gallery-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 768px){
     p{
         max-width: 500px;
-    }
-    .video{
-        width:100%
     }
     .gallery-img{
     max-width: 400px;
@@ -56,13 +56,10 @@ li{
 }
 
 @media screen and (min-width: 1024px){
-    p {
-        max-width: 100vw;
+    p{
+        max-width: 700px;
     }
-    .video{
-        width: 100%;
-    }
-    .gallery-img {
+    .gallery-img{
         max-width: 700px;
     }
     form{

@@ -13,10 +13,11 @@ body {
 header {
   background: linear-gradient(to right, rgb(196, 85, 85), rgb(180, 7, 7));
   height: 100px;
-  width: 100%;
+
 }
 header .container-fluid {
   cursor: pointer;
+  width: 100%;
 }
 
 h1 {
@@ -35,7 +36,7 @@ h2 {
   color: red;
   letter-spacing: 5px;
   font-size: 40px;
-  padding-left: 0;
+  margin-left: 10px;
 }
 
 h3 {
@@ -49,11 +50,12 @@ h3 {
 }
 
 form {
-  margin: 20px;
+  margin: 15px;
   background-color: rgba(0, 0, 0, 0.4);
   padding: 10px 20px;
   box-sizing: border-box;
   border-radius: 15px;
+  max-width: 200px;
 }
 form input, form label, form textarea {
   width: 100%;
@@ -110,19 +112,53 @@ p {
   color: black;
 }
 
-.video {
-  margin: 10px;
-  border: 10px solid red;
-  border-radius: 12%;
-  width: 400px;
-  height: 315px;
-}
 
 footer {
-  padding: 80px;
-  margin-top: 50px;
-  background-color: red;
+  padding: 80px; 
+  margin-top: 50px; 
+  background-color: red; 
   width: 100vw;
+  height: auto;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  color: black;
+}
+.footer.content p{
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.redes{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.redes li{
+  margin: 0 10px;
+}
+.footer-bottom{
+  background-color: rgb(203, 96, 96);
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  text-transform: capitalize;
+  color: black;
+  opacity: .4;
+  font-weight: bolder;
 }
 
 /*  Página del Plantel */
